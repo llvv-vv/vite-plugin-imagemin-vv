@@ -1,0 +1,64 @@
+{
+  "name": "vite-plugin-imagemin-vv",
+  "version": "1.1.4",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china",
+    "gifsicle": "5.2.1"
+  },
+  "keywords": [
+    "imagemin",
+    "vite",
+    "vite-plugin",
+    "vite-plugin-imagemin",
+    "vite-plugin-imagemin-vv",
+    "图片压缩",
+    "vite插件"
+  ],
+  "author": "llvv-vv",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/llvv-vv/vite-plugin-imagemin-vv",
+  "scripts": {
+    "prepublishOnly": "yarn build && npm version patch",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@types/gifsicle": "^5.2.0",
+    "@types/imagemin": "^8.0.0",
+    "@types/imagemin-gifsicle": "^7.0.1",
+    "@types/imagemin-jpegtran": "^5.0.1",
+    "@types/imagemin-mozjpeg": "^8.0.1",
+    "@types/imagemin-optipng": "^5.2.1",
+    "@types/imagemin-svgo": "^10.0.1",
+    "@types/imagemin-webp": "^7.0.0",
+    "@types/node": "^18.8.1",
+    "rollup": "^2.79.1",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.4"
+  },
+  "dependencies": {
+    "globby": "^13.1.2",
+    "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "imagemin-webp": "^7.0.0",
+    "ora": "^6.1.2"
+  }
+}
